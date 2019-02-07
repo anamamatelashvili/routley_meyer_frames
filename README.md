@@ -42,6 +42,8 @@ Frames need to satisfy the following for all a, b, c, a', b', c' in S:
     - `frame.get_quadruples1()` and `frame.get_quadruples2()` return all quadruples (a,b,c,d) that satisfy the two versions of R^2
     - `get_frames(n=3, tries = 100000)` will try to find new frames among all possibilities of <S, P, R> with S = 3 = {0,1,2}, but it will only try the first 100000 possibilities (with random R sizes)
 
+If you try to initialise a frame with P, R and n that do not satisfy the frame properties defined above you will get an error. Try deleting (0,0,0) from `R1` and re-initialising the frame. 
+
 ### Files
 The repository contains the following files:
 
