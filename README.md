@@ -4,7 +4,7 @@
 #### Table of Contents
 1. [Introduction](#introduction)
 2. [Instructions](#instructions)
-3. [The files in the repository](#files)
+3. [Files](#files)
 
 
 ### Introduction
@@ -36,7 +36,7 @@ Frames need to satisfy the following for all a, b, c, a', b', c' in S:
     - `frame = rmframe.RMFrame(R = R1, P = [0], n = 3)` 
     - Try deleting `(0,0,0)` from `R1` and redefining the frame, see what happens
 
-### The files in the repository
+### Files
 The repository contains the following files:
 
 * rmframe.py -- contains the code for the frame class and auxiliary functions 
