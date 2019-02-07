@@ -34,7 +34,13 @@ Frames need to satisfy the following for all a, b, c, a', b', c' in S:
 
     - `R1 = [(0,0,0), (0,1,1), (0,2,2), (1,0,1), (1,1,0), (1,1,1), (1,1,2), (1,2,1), (1,2,2), (2,0,2), (2,1,1), (2,1,2), (2,2,0), (2,2,1), (2,2,2)]`
     - `frame = rmframe.RMFrame(R = R1, P = [0], n = 3)` 
-    - Try deleting `(0,0,0)` from `R1` and redefining the frame, see what happens
+    - `frame.r(0,1,1)` checks if (0,1,1) is in R (True)
+    - `frame.r_S(0,1)` checks if 0≤1 for ≤ defined above (False) 
+    - `frame.r2_1(a, b, c, d)` and `frame.r2_2(a, b, c, d)` check if (a,b,c,d) satisfy the two versions of R^2 defined above
+    - `frame.draw_table()` draws R in a table form
+    - `frame.set_closure({0,1})` returns the set of all elements of S that are smaller than anythin in {0,1} ({0,1})
+    - `frame.get_quadruples1()` and `frame.get_quadruples2()` return all quadruples (a,b,c,d) that satisfy the two versions of R^2
+    - `get_frames(n=3, tries = 100000)` will try to find new frames among all possibilities of <S, P, R> with S = 3 = {0,1,2}, but it will only try the first 100000 possibilities (with random R sizes)
 
 ### Files
 The repository contains the following files:
