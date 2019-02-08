@@ -22,10 +22,10 @@ Definitions:
 
 Frames need to satisfy the following for all a, b, c, a', b', c' in S:
 * a≤a
-* a≤b and b≤c imply a≤c
-* a’≤a and Rabc imply Ra’bc
-* b’≤b and Rabc imply Rab’c
-* c≤c’ and Rabc imply Rabc’
+* (a≤b & b≤c) implies a≤c
+* (a’≤a & Rabc) implies Ra’bc
+* (b’≤b & Rabc) implies Rab’c
+* (c≤c’ & Rabc) implies Rabc’
 
 ### Instructions
 1. Run `python rmframe.py` in the project's root directory to see an example of a frame with its attributes and some of its methods as well as an example of `get_frames` function.
