@@ -8,7 +8,7 @@
 
 
 ### Introduction
-In this project we implement Routley-Meyer frames used for relevance logic (see section 3.7 of [this article](https://consequently.org/papers/rle.pdf)). 
+In this project we implement Routley-Meyer frames used for relevance logic (see section 3.7 of [this article](https://consequently.org/papers/rle.pdf)). This is work in progress and I would love to hear about bugs and wishes. 
 
 The frames are triples <S, P, R> where:
 * S = n = {0, 1, 2, ... , n-1} with n > 0, 
